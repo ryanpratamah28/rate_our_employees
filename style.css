@@ -1,0 +1,255 @@
+:root {
+	--white-color: #fff;
+	--green-color: #99b501;
+	--dark-green-color: #346f14;
+	--black-color: #0000;
+	--yellow-color: #efc20f;
+	--gray-color: #808080;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+/* Body */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+}
+
+/* App Header*/
+
+#app {
+	min-height: 100vh;
+	background-image: url("img/bg-sijamal.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#app .header .container {
+	width: min(100% - 30px, 1320px);
+}
+
+#app .header a.brand img {
+	width: 100px;
+}
+
+#app .header button.buttonSkip {
+	background-color: transparent;
+	color: var(--green-color);
+	border: none;
+	font-weight: 400;
+	font-size: 32px;
+}
+
+/* App content */
+
+#app .content .container {
+	width: min(100% - 30px, 1320px);
+}
+
+#app .content .title h1 {
+	margin: 0 0 80px 0;
+	font-weight: 700;
+	font-size: 32px;
+	color: var(--green-color);
+}
+
+/* Content Card */
+
+.d-flex .vector img {
+	width: 370px;
+}
+
+#app .card {
+	max-width: 768px;
+	background-color: var(--white-color);
+	border-radius: 20px;
+	border: none;
+}
+
+#app .card .profile-picture img {
+	width: 180px;
+	margin: -100px 0 0 0;
+	border-radius: 100%;
+	border: 15px solid #ffffff;
+}
+
+#app .card .card-body .card-content h5.card-title {
+	font-family: "Poppins";
+	font-weight: 700;
+	font-size: 28px;
+	color: var(--dark-green-color);
+}
+
+#app .card .card-body .card-content p.card-text {
+	font-family: "Poppins";
+	font-weight: 400;
+	font-size: 20px;
+}
+
+#app .card .card-body .stars i {
+	color: var(--gray-color);
+	font-size: 40px;
+	cursor: pointer;
+	transition: color 0.2s ease;
+}
+
+#app .card .card-body .stars i.active {
+	color: var(--yellow-color);
+}
+
+#app .card a.btnSubmit {
+	width: 25%;
+	font-size: 24px;
+	color: var(--white-color);
+	font-weight: 700;
+	margin-bottom: 20px;
+	background-color: var(--yellow-color);
+	border-radius: 10px;
+}
+
+#app .content a.btn-submit-responsive {
+	display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1400px) {
+	.d-flex .vector img {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	/* App header */
+
+	#app .header a.brand img {
+		width: 80px;
+	}
+
+	#app .header button.buttonSkip {
+		font-size: 24px;
+	}
+
+	/*App content*/
+
+	#app .content .title h1 {
+		margin: 0 0 50px 0;
+		font-size: 32px;
+	}
+
+	/* Content Card */
+
+	#app .card {
+		margin: 0;
+	}
+
+	#app .card .profile-picture img {
+		width: 180px;
+		margin: -80px 0 0 0;
+	}
+
+	#app .card .card-body .card-content h5.card-title {
+		font-size: 28px;
+	}
+
+	#app .card .card-body .card-content p.card-text {
+		font-size: 18px;
+	}
+
+	#app .card .card-body .stars i {
+		font-size: 36px;
+	}
+
+	#app .card .card-body .stars i.active {
+		color: var(--yellow-color);
+	}
+
+	#app .card a.btnSubmit {
+		display: none;
+	}
+
+	#app .content a.btn-submit-responsive {
+		display: block;
+		width: 100%;
+		font-size: 18px;
+		color: var(--white-color);
+		font-weight: 700;
+		background-color: var(--yellow-color);
+		border-radius: 10px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	/* App header */
+
+	#app .header a.brand img {
+		width: 100px;
+	}
+
+	#app .header button.buttonSkip {
+		font-size: 24px;
+	}
+
+	/*App content*/
+
+	#app .content .title h1 {
+		margin: 0 0 50px 0;
+		font-size: 24px;
+	}
+
+	/* Content Card */
+
+	#app .card {
+		margin: 0;
+	}
+
+	#app .card .profile-picture img {
+		width: 180px;
+		margin: -80px 0 0 0;
+	}
+
+	#app .card .card-body .card-content h5.card-title {
+		font-size: 18px;
+	}
+
+	#app .card .card-body .card-content p.card-text {
+		font-size: 16px;
+	}
+
+	#app .card .card-body .stars {
+		gap: 0.5rem !important;
+	}
+
+	#app .card .card-body .stars i {
+		font-size: 28px;
+	}
+
+	#app .card .card-body .stars i.active {
+		color: var(--yellow-color);
+	}
+
+	#app .card a.btnSubmit {
+		display: none;
+	}
+
+	#app .content a.btn-submit-responsive {
+		display: block;
+		width: 100%;
+		font-size: 16px;
+		color: var(--white-color);
+		font-weight: 700;
+		background-color: var(--yellow-color);
+		border-radius: 10px;
+	}
+}
