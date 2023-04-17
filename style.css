@@ -66,7 +66,11 @@ body {
 
 /* Content Card */
 
-.d-flex .vector img {
+.d-flex .vector_satpam img {
+	width: 380px;
+}
+
+.d-flex .vector_office-girl img {
 	width: 370px;
 }
 
@@ -125,7 +129,11 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 1400px) {
-	.d-flex .vector img {
+	.d-flex .vector_satpam img {
+		display: none;
+	}
+
+	.d-flex .vector_office-girl img {
 		display: none;
 	}
 }
